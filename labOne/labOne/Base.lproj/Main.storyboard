@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="labOne" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hKW-7J-ncV">
+                                <rect key="frame" x="92" y="20" width="417" height="59"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kim-I9-HoV">
+                                        <rect key="frame" x="0.0" y="0.0" width="168" height="59"/>
+                                        <inset key="contentEdgeInsets" minX="82" minY="36" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Happy times"/>
+                                        <connections>
+                                            <action selector="sadButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lPe-n4-QOP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBs-bv-UMe">
+                                        <rect key="frame" x="168" y="0.0" width="249" height="59"/>
+                                        <inset key="contentEdgeInsets" minX="82" minY="41" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Sad times"/>
+                                        <connections>
+                                            <action selector="sadButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cfd-90-0Gg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Day of Coffee" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFu-3R-AEm">
+                                <rect key="frame" x="92" y="20" width="417" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffeeFriends" translatesAutoresizingMaskIntoConstraints="NO" id="tNm-9C-fdR">
+                                <rect key="frame" x="92" y="120" width="416" height="360"/>
+                                <color key="backgroundColor" red="0.43955283994639172" green="0.48070161096685993" blue="0.52715968586387429" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tNm-9C-fdR" firstAttribute="top" secondItem="hKW-7J-ncV" secondAttribute="top" constant="100" id="6nq-Uk-Nru"/>
+                            <constraint firstItem="hKW-7J-ncV" firstAttribute="top" secondItem="GFu-3R-AEm" secondAttribute="bottom" constant="6" id="EAS-dc-mhF"/>
+                            <constraint firstItem="hKW-7J-ncV" firstAttribute="width" secondItem="GFu-3R-AEm" secondAttribute="width" id="Q2T-Hg-iid"/>
+                            <constraint firstItem="hKW-7J-ncV" firstAttribute="leading" secondItem="GFu-3R-AEm" secondAttribute="leading" id="Rnr-qM-WcZ"/>
+                            <constraint firstItem="tNm-9C-fdR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="62" id="Txe-SA-bCv"/>
+                            <constraint firstItem="tNm-9C-fdR" firstAttribute="leading" secondItem="hKW-7J-ncV" secondAttribute="leading" id="afH-Li-WTF"/>
+                            <constraint firstItem="GFu-3R-AEm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ebU-0G-D6Y"/>
+                            <constraint firstItem="GFu-3R-AEm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fiw-Iz-D9m"/>
+                            <constraint firstItem="hKW-7J-ncV" firstAttribute="top" secondItem="GFu-3R-AEm" secondAttribute="top" id="lx7-mt-Eov"/>
+                            <constraint firstItem="tNm-9C-fdR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="srt-87-9EF"/>
+                            <constraint firstItem="tNm-9C-fdR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u9W-3B-L8z"/>
+                            <constraint firstItem="hKW-7J-ncV" firstAttribute="height" secondItem="GFu-3R-AEm" secondAttribute="height" id="umf-rI-Uu3"/>
+                            <constraint firstItem="hKW-7J-ncV" firstAttribute="top" secondItem="GFu-3R-AEm" secondAttribute="top" id="wyd-Sb-K8S"/>
+                            <constraint firstItem="hKW-7J-ncV" firstAttribute="top" secondItem="GFu-3R-AEm" secondAttribute="top" id="yc4-A9-RK5"/>
+                            <constraint firstItem="hKW-7J-ncV" firstAttribute="top" secondItem="GFu-3R-AEm" secondAttribute="bottom" constant="6" id="yhz-dF-Pkx"/>
+                            <constraint firstItem="hKW-7J-ncV" firstAttribute="height" secondItem="GFu-3R-AEm" secondAttribute="height" id="zPD-9m-gFH"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EAS-dc-mhF"/>
+                                <exclude reference="umf-rI-Uu3"/>
+                                <exclude reference="wyd-Sb-K8S"/>
+                                <exclude reference="yc4-A9-RK5"/>
+                                <exclude reference="yhz-dF-Pkx"/>
+                                <exclude reference="zPD-9m-gFH"/>
+                                <exclude reference="Txe-SA-bCv"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="coffeeFriends" destination="tNm-9C-fdR" id="gwq-mZ-j0m"/>
+                        <outlet property="myLabel" destination="GFu-3R-AEm" id="cqk-Pp-tVE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="coffeeFriends" width="416" height="312"/>
+    </resources>
+</document>
