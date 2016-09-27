@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="labTres" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="TYc-qX-tBS">
+                                <rect key="frame" x="44" y="122" width="206" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dollars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LR2-0B-YJS">
+                                        <rect key="frame" x="0.0" y="0.0" width="53" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0.0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tZP-kJ-6JP">
+                                        <rect key="frame" x="153" y="0.0" width="53" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="IrK-Ur-pbp">
+                                <rect key="frame" x="55" y="308" width="254" height="21"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6e-WH-4qH">
+                                        <rect key="frame" x="0.0" y="0.0" width="77" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2I1-cP-RiS">
+                                        <rect key="frame" x="177" y="0.0" width="77" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="i0L-QC-Me9">
+                                <rect key="frame" x="44" y="198" width="265" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exchange Rate" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUG-vz-b4i">
+                                        <rect key="frame" x="0.0" y="0.0" width="114" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0.0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nia-NS-gYN">
+                                        <rect key="frame" x="214" y="0.0" width="51" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exchange Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kz2-5X-1ru">
+                                <rect key="frame" x="119" y="28" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="TYc-qX-tBS" firstAttribute="top" secondItem="Kz2-5X-1ru" secondAttribute="bottom" constant="30" id="05n-8L-k9M"/>
+                            <constraint firstItem="i0L-QC-Me9" firstAttribute="top" secondItem="TYc-qX-tBS" secondAttribute="bottom" constant="44" id="79o-ST-05G"/>
+                            <constraint firstItem="Kz2-5X-1ru" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="9dF-8P-yMY"/>
+                            <constraint firstItem="TYc-qX-tBS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="JoL-sc-T7U"/>
+                            <constraint firstItem="TYc-qX-tBS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="QQi-tc-K72"/>
+                            <constraint firstItem="Kz2-5X-1ru" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="UsU-hW-1x5"/>
+                            <constraint firstItem="IrK-Ur-pbp" firstAttribute="top" secondItem="i0L-QC-Me9" secondAttribute="bottom" constant="74" id="Yuz-iS-m2v"/>
+                            <constraint firstItem="i0L-QC-Me9" firstAttribute="trailing" secondItem="IrK-Ur-pbp" secondAttribute="trailing" id="hu4-zD-g3c">
+                                <variation key="heightClass=compact-widthClass=compact" constant="6"/>
+                            </constraint>
+                            <constraint firstItem="IrK-Ur-pbp" firstAttribute="top" secondItem="i0L-QC-Me9" secondAttribute="bottom" constant="80" id="l0c-oB-EE2">
+                                <variation key="heightClass=compact-widthClass=compact" constant="74"/>
+                            </constraint>
+                            <constraint firstItem="TYc-qX-tBS" firstAttribute="leading" secondItem="i0L-QC-Me9" secondAttribute="leading" id="l6S-hD-orK"/>
+                            <constraint firstItem="TYc-qX-tBS" firstAttribute="leading" secondItem="i0L-QC-Me9" secondAttribute="leading" id="msf-O9-WLN"/>
+                            <constraint firstItem="i0L-QC-Me9" firstAttribute="top" secondItem="TYc-qX-tBS" secondAttribute="bottom" constant="46" id="qED-e2-dki">
+                                <variation key="heightClass=compact-widthClass=compact" constant="44"/>
+                            </constraint>
+                            <constraint firstItem="i0L-QC-Me9" firstAttribute="centerX" secondItem="IrK-Ur-pbp" secondAttribute="centerX" id="qFE-71-xCt"/>
+                            <constraint firstItem="Kz2-5X-1ru" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qMg-yw-xVC"/>
+                            <constraint firstItem="Kz2-5X-1ru" firstAttribute="centerX" secondItem="i0L-QC-Me9" secondAttribute="centerX" id="rnC-B2-WiZ">
+                                <variation key="heightClass=compact-widthClass=compact" constant="23.5"/>
+                            </constraint>
+                            <constraint firstItem="TYc-qX-tBS" firstAttribute="top" secondItem="Kz2-5X-1ru" secondAttribute="bottom" constant="73" id="rzw-Ew-Epq">
+                                <variation key="heightClass=compact-widthClass=compact" constant="30"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UsU-hW-1x5"/>
+                                <exclude reference="qMg-yw-xVC"/>
+                                <exclude reference="05n-8L-k9M"/>
+                                <exclude reference="JoL-sc-T7U"/>
+                                <exclude reference="l6S-hD-orK"/>
+                                <exclude reference="79o-ST-05G"/>
+                                <exclude reference="qFE-71-xCt"/>
+                                <exclude reference="Yuz-iS-m2v"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="9dF-8P-yMY"/>
+                                <include reference="UsU-hW-1x5"/>
+                                <include reference="qMg-yw-xVC"/>
+                                <exclude reference="rnC-B2-WiZ"/>
+                                <include reference="05n-8L-k9M"/>
+                                <include reference="JoL-sc-T7U"/>
+                                <exclude reference="QQi-tc-K72"/>
+                                <include reference="l6S-hD-orK"/>
+                                <exclude reference="msf-O9-WLN"/>
+                                <exclude reference="rzw-Ew-Epq"/>
+                                <include reference="79o-ST-05G"/>
+                                <exclude reference="hu4-zD-g3c"/>
+                                <exclude reference="qED-e2-dki"/>
+                                <include reference="qFE-71-xCt"/>
+                                <include reference="Yuz-iS-m2v"/>
+                                <exclude reference="l0c-oB-EE2"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="eUe-Ho-hPT" appends="YES" id="NZq-41-ZTx"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="dollar" destination="tZP-kJ-6JP" id="L7c-M5-8ME"/>
+                        <outlet property="dollarsL" destination="LR2-0B-YJS" id="kSl-aG-fkf"/>
+                        <outlet property="exchange" destination="nia-NS-gYN" id="D0a-Lf-XRN"/>
+                        <outlet property="exchangeL" destination="GUG-vz-b4i" id="7up-oH-pxo"/>
+                        <outlet property="totalMoney" destination="2I1-cP-RiS" id="Gqm-ou-Jcw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="eUe-Ho-hPT">
+                    <connections>
+                        <action selector="onTapGestureRecognized:" destination="BYZ-38-t0r" id="975-82-wDe"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>
